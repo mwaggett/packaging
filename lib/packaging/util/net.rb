@@ -364,7 +364,6 @@ if [[ -r Gemfile ]]; then
   #{remote_bundle_install_command}
   bundle_prefix='bundle exec' ;
 fi ;
-$bundle_prefix rake package:bootstrap
 DOC
       Pkg::Util::Net.remote_ssh_cmd(host, command)
       "/tmp/#{Pkg::Config.project}-#{appendix}"
